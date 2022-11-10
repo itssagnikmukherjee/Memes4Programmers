@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background-image: url("background-img.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.meme-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 2vw;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.196);
+    padding: 2vw;
+}
+#meme-img{
+height: 26vw;
+width: 27vw;
+}
+#meme-text{
+    font-size: 1.3vw;
+    margin: 1vw;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(0, 0, 0, 0.554);
+    width: 25vw;
+}
+#btn{
+    padding: .8vw 2vw;
+    border: 0px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 2vw;
+    cursor: pointer;
+    background-color: yellow;
+    font-weight: 700;
+    color: rgb(40, 40, 40);
+    transition: 0.2s;
+    font-size: 1vw;
+}
+#btn:hover{
+    background-color: rgb(40, 40, 40);
+    color: yellow;
+    transition: 0.2s;
+}
+
+.share-opt{
+    position: absolute;
+    top: 10%;
+    right: 28%;
+    font-size: 2.2vw;
+    background-color: bisque;
+    padding: 1vw;
+    border-radius: 50%;
+    width: 4.3vw;
+    cursor: pointer;
+}
+.share-btn > i{
+    font-size: 2vw;
+    background-color: grey;
+    padding: 1vw;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: 12%;
+    right: 30%;
+    cursor: pointer;
+}
+.sharing-opts{
+    list-style: none;
+    position: absolute;
+    top: 30%;
+}
+.sharing-opts > li > a > i{
+    padding: 1vw;
+    border-radius: 50%;
+    margin: 1vw;
+    background-color: rgba(255, 255, 255, 0.674);
+    font-size: 2vw;
+    cursor: pointer;
+}
+.fa-whatsapp{
+    color: rgb(21, 152, 51);
+    transition: 0.3s;
+}
+.fa-facebook{
+    color: rgb(39, 130, 167);
+    transition: 0.5s;
+}
+.fa-twitter{
+    color: rgb(89, 99, 211);
+    transition: 0.7s;
+}
+@media screen and (max-width:1000px) {
+    #meme-img{
+        height: 60vw;
+        width: 60vw;
+    }
+    #meme-text{
+        font-size: 3vw;
+        width: 60vw;
+    }
+    #btn{
+        font-size: 3vw;
+        padding: 1vw 6vw;
+    }
+}

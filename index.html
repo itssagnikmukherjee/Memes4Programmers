@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Memes</title>
+    <link rel="stylesheet" href="res/style.css">
+    <script src="https://kit.fontawesome.com/4ceabe38a1.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <div class="main-container">
+        <div class="meme-container">
+            <img id="meme-img" src="res/meme-default.png">
+            <div id="meme-text">Don't Click</div>
+            <button id="btn" onclick="newMeme();">FRUSTRATE ME !</button>
+        </div>
+    </div>
+    
+    <div class="share-btn" onclick="toggleMenu();">
+        <i class="fa-solid fa-share-nodes"></i> 
+        <ul class="sharing-opts">
+            <li>
+                <a href="https://api.whatsapp.com/send?phone=&text=<?php urlencode('memes')?> url" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/sharer.php?u=link"><i class="fa-brands fa-facebook" target="_blank"></i></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/share?text=text&url=http://url&hashtags=#meme,#coding,#funny" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+        </ul>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
