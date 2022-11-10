@@ -61,26 +61,29 @@ width: 27vw;
     width: 4.3vw;
     cursor: pointer;
 }
+.entire-container{
+   display: flex;
+}
+.share-btn{
+    position: absolute;
+    right: 30%;
+}
 .share-btn > i{
     font-size: 2vw;
     background-color: grey;
     padding: 1vw;
     border-radius: 50%;
     color: white;
-    position: absolute;
-    top: 12%;
-    right: 30%;
     cursor: pointer;
 }
 .sharing-opts{
     list-style: none;
     position: absolute;
-    top: 30%;
 }
 .sharing-opts > li > a > i{
     padding: 1vw;
     border-radius: 50%;
-    margin: 1vw;
+    margin-top: 1vw;
     background-color: rgba(255, 255, 255, 0.674);
     font-size: 2vw;
     cursor: pointer;
@@ -97,17 +100,51 @@ width: 27vw;
     color: rgb(89, 99, 211);
     transition: 0.7s;
 }
-@media screen and (max-width:1000px) {
+
+@media screen and (max-width:900px) {
     #meme-img{
         height: 60vw;
-        width: 60vw;
+        width: 55vw;
     }
     #meme-text{
         font-size: 3vw;
-        width: 60vw;
+        width: 55vw;
     }
     #btn{
         font-size: 3vw;
-        padding: 1vw 6vw;
+        padding: 2vw 7vw;
+        margin: 2vw;
+    }
+    .share-btn{
+        right: 10%;
+    }
+    .share-btn > i{
+        font-size: 4vw;
+        background-color: grey;
+        padding: 2vw;
+    }
+    .sharing-opts > li > a > i{
+        padding: 2vw;
+        margin-top: 3vw;
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #meme-img{
+        height: 90vw;
+        width: 85vw;
+    }
+    #meme-text{
+        font-size: 5vw;
+        width: 85vw;
+    }
+    #btn{
+        font-size: 5vw;
+        padding: 2vw 7vw;
+        margin: 3vw;
+    }
+    .share-btn{
+        margin-top: 4vw;
     }
 }
